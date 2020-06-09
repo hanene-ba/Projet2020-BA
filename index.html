@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			footer {
+               background-color: #777;
+               padding: 100px;
+               text-align: left;
+               color: white;
+                   }
+		</style>
+		<title>mini_projet</title>
+    </head>
+	<body style="background-color:#ffd11a;">
+		<header>
+
+		<a style="text-align: center;"> 
+		<h1 style="font-size: 100px;"><em><marquee scrollamount="11" style="color: saddlebrown;"><i>it's all about Motivation! success is a result </i> </marquee></em></h1> <!-- marquee pour défler le texte-->
+		<marquee ><!--opaity 0.4 pour rendre l'image transparente-->
+		   <img src="C:\Users\Hanene\.idlerc\Desktop\go my code\projet 1html\res/css.png"alt="CSS" width="60" height="80" style="opacity: 0.4;"> 
+		   <img src="C:\Users\Hanene\.idlerc\Desktop\go my code\projet 1html\res/html.png" alt="HTML" width="60" height="80" style="opacity: 0.4;">
+		   <img src="C:\Users\Hanene\.idlerc\Desktop\go my code\projet 1html\res/js.png" alt="javascritp" width="60" height="80" style="opacity: 0.4;">
+		   <img src="C:\Users\Hanene\.idlerc\Desktop\go my code\projet 1html\res/node-js.png" alt="node-js" width="60" height="80" style="opacity: 0.4;">
+		   <img src="C:\Users\Hanene\.idlerc\Desktop\go my code\projet 1html\res/react.png" alt="React" width="60" height="80" style="opacity: 0.4;">
+		   <img src="C:\Users\Hanene\.idlerc\Desktop\go my code\projet 1html\res/php.png" alt="PHP" width="60" height="80" style="opacity: 0.4;">
+	    </marquee>
+		<b>
+        <h2 style="border:2px solid gray;"><i><mark>I'm Hanene BEN AMEUR : A software developer</mark></i></h2>
+		</b>
+      </header>
+      <audio controls>
+        <source src="C:\Users\Hanene\.idlerc\Desktop\go my code\projet 1html\res/Molla.mp3" type="audio/mp3">
+      </audio>
+		<section>
+			<nav>
+        <h3 style="color: green;" ><B><u>Welcome to the FAMILY !  </u></B>
+        </h3>
+        
+
+
+		<h3><a href="index.html" style="color: blue;">Home page </a></h3>
+		<h3><a href="courses.html" style="color: blue;">Courses </a></h3>
+		<h3><a href="#contact" style="color: blue;">Contact US</a></h3><!--lien interne en utilisant l'attribut id en bas de page -->
+
+		<fieldset style="width: 60%; height: 80% ; margin: auto;">
+			<legend style="text-align: left;"><h2><b>Regestration FORM  </b></h2></legend>
+		
+		
+
+        <form action="page2.html">
+        <section>
+            <h2 left >present yourself</h2>
+            <p style="color: red;">Les champs obligatoires sont suivis par un <strong><abbr title="required">*</abbr></strong></p>
+		   
+			<fieldset style="width:30%; height:50%; margin:  auto;">
+              <legend>Gender</legend>
+                    <input type="radio" id="choix_1" name="title" value="Madame" ><!--il faut que le name soit le meme pour les 2 radiobottom pour empécher qu'on puisse coher les 2 -->
+                     Madame
+                    <label for="choix_1">
+                    </labe><br>
+
+                    <input type="radio" id="choix_2" name="title" value="Monsieur"><!--"les boutton radio" sont  utilisé surtt pour contruire un groupe d'options à fin de regrouper plusieurs interactifs-->
+                    <label for="choix_2">
+                     Monsieur
+                    </label>
+            </fieldset>
+            <p>
+              <label for="name">
+                <span>Name:</span>
+                <strong><abbr title="obligatoire">*</abbr></strong><!--abbr utilisé pour expliqué une donnée pas trop conpréhensible ( abréviation ou acronyme) l* exprime que le champs est obligatoire . strong montre l'importance des données saisies -->
+              </label>
+              <input type="text" id="name" name="username" required >
+            </p>
+            <p>
+              <label for="mail">
+                <span>E-mail :</span><!--span est equivalent à div mais pour rester dans la meme ligne-->
+                <strong><abbr title="obligatoire">*</abbr></strong><!-- required oblige l'utilisateur de remplir le champs avannt des submit-->
+              </label>
+              <input type="email" id="mail" name="usermail" required>
+            </p>
+            <p>
+              <label for="pwd">
+                <span>Mot de passe :</span>
+                <strong><abbr title ="doit étre rempli" >*</abbr></strong>
+              </label>
+              <input type="password" id="pwd" name="password" required >
+            </p>
+        </section> 
+
+        <section>
+            <h2>informations about you </h2>
+            <p>
+              <label for="movie">
+                <span>education level:</span>
+              </label>
+              <select id="movie" name="name_movie">
+                <option value="action">Bac</option>
+                <option value="doc">Bac+3</option>
+                <option value="disney">Bac+5</option>
+              </select>
+            </p>
+            <p>
+              <label for="skills">
+              <span>skill:</span>
+              <input type="text" id="skills" name="user_hob">
+              
+              </label><br> 
+            </p>
+
+            <p>
+              <label for="date">
+                <span>Date:</span>
+                <em>format mm/aa</em><!--pour marquer une information par un style différent -->
+              </label>
+              <input type="text" id="date" name="date_jour">
+            </p>
+		</section>
+
+		<p> <button type="submit">Submit</button></p><!--je trouve pas la solution pour rendre les 2 boutton alignés -->
+		<p> <button type="Reset" onclick="alert('you can try again')">Reset </button></p>
+	    </section>
+             </nav> 
+		</form>
+		</fieldset>
+		<footer>
+			<h1><em><div id="contact">Contact US</div></em></h1>
+			
+			<p style="font-size: 20px;" style="color:saddlebrown ;" ><em><b>if you need any information you can contact us , we will be happy to help ypu </b></em></p>
+			<a href=""><img src="C:\Users\Hanene\.idlerc\Desktop\go my code\projet 1html\res/facebook.png"width="70" height="90"></a>
+			<a href=""><img src="C:\Users\Hanene\.idlerc\Desktop\go my code\projet 1html\res/mail.png" width="60" height="80"></a>
+			<a href=""><img src="C:\Users\Hanene\.idlerc\Desktop\go my code\projet 1html\res/phone.png" width="60" height="80"></a>
+			<fieldset>
+				<h3>Adresse : </h3>
+			</fieldset>
+    </footer>
+    
+	</body>
+</html>
